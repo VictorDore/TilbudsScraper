@@ -1,0 +1,15 @@
+Flow:
+Læs produkt navne til liste
+Spørg om der ønskes at tilføje yderligere produkter // Dette laves ikke som udgangspunkt
+Prune duplicates
+Herefter individuelt crawl for priser hvor de ønskede værdier samles i en liste af tuples
+Slutteligt skrives der til price filen
+
+Product name file:
+Holder navne på produkter, der skal bruges
+Skal læses inden crawl for priser kan laves
+Mulighed for at tilføje produkter
+
+Price file:
+Hver produkt får en linje med produktnavn, pris, butik, datointerval og link til avis
+Når programmet kører overskrives indholdet af denne fil
