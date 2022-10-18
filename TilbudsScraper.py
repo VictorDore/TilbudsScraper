@@ -44,7 +44,7 @@ def findLowestPrice(product, driver) -> str:
     url = "https://www.tilbudsugen.dk/tilbud/" + product
     acceptable_stores = {"Føtex", "Netto", "Lidl", "Fakta", "SPAR", "REMA 1000"}
     driver.get(url)
-    productElements = driver.find_elements(By.CSS_SELECTOR, "a[class='search-result-item search_result_list']")
+    productElements = driver.find_elements(By.CSS_SELECTOR, "a[class*='search-result-item search_result_list']")
     if len(productElements) == 0:
         return product + " er ikke på tilbud denne uge"
 
